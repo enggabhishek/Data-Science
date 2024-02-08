@@ -15,7 +15,6 @@ There are 46 jupyter notebook files which are mentioned as follows:
 3. KNN_Scratch.ipynb:
     - Description:
           * KNN, or k-nearest neighbors, is a popular algorithm in data science used for classification and regression tasks. The KNN algorithm works by calculating the distance between the new data point and all other data points in the dataset. The distance is typically calculated using Euclidean distance, although other distance metrics can be used as well. The k nearest neighbors are then identified, where k is a pre-specified number.
-          * The choice of the value of k is an important hyperparameter in the KNN algorithm. A small value of k will make the algorithm more sensitive to noise and outliers, while a large value of k will make the algorithm less sensitive to noise but may result in less accurate predictions.
     - Functions Used:
         * clf = KNeighborsClassifier(n_neighbors=7)
         * clf.fit(X_train, Y_train)
