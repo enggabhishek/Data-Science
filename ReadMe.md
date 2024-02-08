@@ -1,6 +1,6 @@
-# Data Analytics and Machine-Learning
-This repository includes all the Data Analytics and Machine learning projects written in jupyter notebook using python language.
-There are 46 jupyter notebook files which are mentioned as follows:
+# Data Analytics
+This repository includes all the Data Analytics related projects written in jupyter notebook using python language.
+There are 43 jupyter notebook files which are mentioned as follows:
 ### 1. Feature_Scaling.ipynb:
    #### - Description: 
    * Using Pandas library creating dataframe from 'wine_data.csv' file.
