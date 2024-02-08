@@ -74,11 +74,13 @@ There are 46 jupyter notebook files which are mentioned as follows:
    #### - Description:
    * Principal Component Analysis (PCA) is a dimensionality reduction technique used to transform a high-dimensional dataset into a lower-dimensional one by identifying and capturing the most important patterns and relationships in the data.
    * The steps involved in performing PCA are as follows:
-        a. Standardize the data by subtracting the mean and dividing by the standard deviation for each feature.
-        b. Compute the covariance matrix of the standardized data.
-        c. Compute the eigenvectors and eigenvalues of the covariance matrix.
-        d. Sort the eigenvectors in descending order of their corresponding eigenvalues to obtain the principal components.
-        e. Project the data onto the principal components to obtain the lower-dimensional representation of the data.
+        <ol type="a">
+           <li>Standardize the data by subtracting the mean and dividing by the standard deviation for each feature.</li>
+           <li>Compute the covariance matrix of the standardized data.</li>
+           <li>Compute the eigenvectors and eigenvalues of the covariance matrix.</li>
+           <li>Sort the eigenvectors in descending order of their corresponding eigenvalues to obtain the principal components.</li>
+           <li>Project the data onto the principal components to obtain the lower-dimensional representation of the data.</li>
+        </ol>
    * PCA has a wide range of applications in various fields such as data science, image processing, and finance. It can be used for tasks such as data compression, data visualization, and feature extraction.
    #### - Functions Used:
    * pca = PCA(n_components = 2)
