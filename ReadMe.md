@@ -88,3 +88,76 @@ There are 46 jupyter notebook files which are mentioned as follows:
    * pca = PCA(n_components = 1)
    * X_reduced = pca.fit_transform(X)
    * X_approx = pca.inverse_transform(X_reduced)
+
+### 10. PCA_2D.ipynb:
+   #### - Description:
+   * Principal Component Analysis (PCA) is a dimensionality reduction technique used to transform a high-dimensional dataset into a lower-dimensional one by identifying and capturing the most important patterns and relationships in the data.
+   * The steps involved in performing PCA are as follows:
+        <ol type="a">
+           <li>Standardize the data by subtracting the mean and dividing by the standard deviation for each feature.</li>
+           <li>Compute the covariance matrix of the standardized data.</li>
+           <li>Compute the eigenvectors and eigenvalues of the covariance matrix.</li>
+           <li>Sort the eigenvectors in descending order of their corresponding eigenvalues to obtain the principal components.</li>
+           <li>Project the data onto the principal components to obtain the lower-dimensional representation of the data.</li>
+        </ol>
+   * PCA has a wide range of applications in various fields such as data science, image processing, and finance. It can be used for tasks such as data compression, data visualization, and feature extraction.
+   #### - Functions Used:
+   * pca = PCA(n_components = 2)
+   * transformed_data = pca.fit_transform(all_data)
+   * pca = PCA(n_components = 1)
+   * X_reduced = pca.fit_transform(X)
+   * X_approx = pca.inverse_transform(X_reduced)
+
+### 11. NaiveBayes.ipynb:
+   #### - Description:
+   * Naive Bayes is a probabilistic classification algorithm based on Bayes' theorem. It assumes that the presence of a particular feature in a class is independent of the presence of any other feature in the same class. This assumption is known as the "naive" assumption and hence the name "Naive Bayes".
+   * There are three main types of Naive Bayes algorithms:
+        <ol type="a">
+           <li>Gaussian Naive Bayes: assumes that the input features are normally distributed and calculates the conditional probability of each feature given each class using the Gaussian probability density function.</li>
+           <li>Multinomial Naive Bayes: used for discrete data such as text data and assumes that the input features have a multinomial distribution.</li>
+           <li>Bernoulli Naive Bayes: also used for discrete data but assumes that each input feature is binary (present or absent) and calculates the conditional probability using the Bernoulli distribution.</li>
+        </ol>
+   #### - Functions Used:
+   * dictionary = fit(X_train,Y_train)
+   * Y_pred = predict(dictionary,X_test)
+   * classification_report(Y_test,Y_pred)
+   * confusion_matrix(Y_test,Y_pred)
+
+### 12. Movie_Reviews_SKLearn_via_NLTK.ipynb:
+   #### - Description:
+   * The Natural Language Toolkit (NLTK) is a popular open-source library for natural language processing (NLP) in Python. NLTK provides a wide range of tools and resources for working with human language data, including data pre-processing, text classification, tokenization, stemming, tagging, parsing, and semantic analysis.
+   * Some of the key features of NLTK include:
+        <ol type="a">
+           <li>Tokenization: breaking up text into individual words or sentences.</li>
+           <li>Stemming: reducing words to their root form.</li>
+           <li>Part-of-speech (POS) tagging: labeling words with their grammatical categories.</li>
+           <li>Named Entity Recognition (NER): identifying and classifying named entities such as people, organizations, and locations.</li>
+           <li>Sentiment analysis: determining the sentiment or polarity of a text.</li>
+           <li>Parsing: analyzing the grammatical structure of a sentence.</li>
+           <li>Machine learning algorithms: NLTK includes various machine learning algorithms for text classification and clustering.</li>
+        </ol>
+   #### - Functions Used:
+   * movie_reviews.words(movie_reviews.fileids()[5])
+   * lemmatizer = WordNetLemmatizer()
+   * stops = set(stopwords.words('english'))
+   * stops.update(punctuations)
+   * classfier = NaiveBayesClassifier.train(training_data)
+   * nltk.classify.accuracy(classfier, testing_data)
+   * classifier_sklearn = SklearnClassifier(svc)
+
+### 13. Movie_Reviews_SKLearn_CountVectorizer.ipynb:
+   #### - Description:
+   * NLTK also provides access to various corpora and lexicons, including the Brown Corpus, Gutenberg Corpus, WordNet, and the Penn Treebank Corpus. These resources can be used for tasks such as training machine learning models, evaluating performance, and creating language models.
+   #### - Functions Used:
+   * train_set = {"the sky sky is blue", "the sun is bright"}
+   * count_vec = CountVectorizer(max_features = 3)
+   * a = count_vec.fit_transform(train_set)
+
+### 14. NeuralNetworkImplementationWithoutHiddenLayer.ipynb:
+   #### - Description:
+   * A neural network without a hidden layer is also known as a single-layer neural network or a perceptron. It consists of only one layer of neurons, which directly connects the input to the output.
+   * A neural network without a hidden layer is typically used for simple classification tasks or linear regression problems, where the relationship between the input and output variables can be expressed as a linear equation. It can be trained using supervised learning algorithms such as gradient descent or backpropagation.
+   #### - Functions Used:
+   * numpy.random.random((2, 1))
+   * numpy.dot(output0, weights)
+
